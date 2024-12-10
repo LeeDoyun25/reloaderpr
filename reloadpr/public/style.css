@@ -1,4 +1,4 @@
-.jackheader {
+.dailyHeader {
     color:white;
     font-size:30px;
     display: inline-block;
@@ -7,24 +7,12 @@
     margin-left: 30px;
     opacity:0.5;
 }
-.jackheader:hover {
-    color:blue;
-    opacity:1;
-}
-.onyuheader {
-    color:white;
-    font-size:30px;
-    display: inline-block;
-    user-select: none;
-    cursor: pointer;
-    margin-left:30px;
-    opacity:0.5;
-}
-.onyuheader:hover {
+.dailyHeader:hover {
     color:rgb(11,246,56);
     opacity:1;
+    transition: color 0.5s;
 }
-.geminiheader {
+.sportsHeader {
     color:white;
     font-size:30px;
     display: inline-block;
@@ -33,11 +21,26 @@
     margin-left:30px;
     opacity:0.5;
 }
-.geminiheader:hover {
+.sportsHeader:hover {
+    color: blue;
+    opacity:1;
+    transition: color 0.5s;
+}
+.fanclubHeader {
+    color:white;
+    font-size:30px;
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+    margin-left:30px;
+    opacity:0.5;
+}
+.fanclubHeader:hover {
     color:orange;
     opacity:1;
+    transition: color 0.5s;
 }
-.ryuheader {
+.gameHeader {
     color:white;
     font-size:30px;
     display: inline-block;
@@ -46,11 +49,12 @@
     margin-left:30px;
     opacity:0.5;
 }
-.ryuheader:hover {
+.gameHeader:hover {
     color:red;
     opacity:1;
+    transition: color 0.5s;
 }
-.leeonheader {
+.programmingHeader {
     color:white;
     font-size:30px;
     display: inline-block;
@@ -59,9 +63,10 @@
     margin-left:30px;
     opacity:0.5;
 }
-.leeonheader:hover {
+.programmingHeader:hover {
     color:rgb(172,80,247);
     opacity:1;
+    transition: color 0.5s;
 }
 .allheader {
     color:white;
@@ -75,6 +80,7 @@
 .allheader:hover {
     color:rgb(224,118,104);
     opacity:1;
+    transition: color 0.5s;
 }
 h1 {
     font-size: 40px;
@@ -83,9 +89,9 @@ h1 {
     display: inline-block;
 }
 body {
-    background-color: black;
     color:white;
     overflow-y: scroll;
+    background-color: black;
 }
 #searchform {
     display: inline-block;
@@ -115,7 +121,7 @@ body {
     opacity: 1;
 }
 .blocktext {
-    width: 475px;
+    width: 600px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 10px;
@@ -124,7 +130,7 @@ body {
 }
 .blockdiv {
     background-color: white;
-    width: max-content;
+    width: 650px;
     height: auto;
     color: black;
     align-items: center;
@@ -134,12 +140,13 @@ body {
 .blockprofileimg {
     width: 50px;
     height: 50px;
-    margin-bottom: 0;
+    margin-top: 10px;
     border-radius: 10px;
     user-select: none;
     display: inline-block;
     cursor: pointer;
     margin-left: 10px;
+    border-radius: 50%;
 }
 .blockusername {
     width: auto;
@@ -148,6 +155,12 @@ body {
     display: inline-block;
     height: 50px;
     font-weight: 800;
+    color: black;
+    text-decoration: none;
+}
+.blockusername:hover {
+    color: rgb(172,80,247);
+    transition: color 0.5s;
 }
 .blockuploadtime {
     overflow: auto;
@@ -169,6 +182,7 @@ body {
     margin-top: 0;
     margin-left: 10px;
     display: inline-block;
+    color:rgb(224,118,104);
 }
 .notosans {
   font-family: "Noto Sans KR", sans-serif;
@@ -185,7 +199,7 @@ body {
 .blocktextarea {
     resize: none;
     overflow-y: scroll;
-    width: 475px;
+    width: 600px;
     height: 500px;
     border-radius: 10px;
     font-size: 20px;
@@ -194,6 +208,14 @@ body {
     display: none;
 }
 .blocklikebtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    margin-right: 0;
+}
+.blockdislikebtn {
     background: none;
     border: none;
     cursor: pointer;
@@ -218,8 +240,8 @@ body {
     height: 28px;
 }
 .blockuploadbtn {
-    background-color: gray;
-    color: white;
+    background-color:rgb(194, 255, 199);
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -250,6 +272,31 @@ body {
     height: 150px;
     border-radius: 50%;
 }
-.homeuserhandle {
+.homeusername {
     font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+.homeusername:hover {
+    color: rgb(172,80,247);
+    transition: color 0.5s;
+}
+.homeuserhandle {
+    font-size: 25px;
+    margin-left: 25px;
+    color: rgb(224,118,104);
+}
+.homeuserfollower {
+    font-size: 30px;
+}
+.homeuserfollowing {
+    font-size: 30px;
+    margin-left: 25px;
+}
+.prpageprofileimg {
+    width: 350px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 50%;
 }
